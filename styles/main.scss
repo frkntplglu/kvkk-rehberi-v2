@@ -1,0 +1,13 @@
+@import "config/variables.scss";
+//@import "config/mixins.scss";
+@import "config/global.scss";
+//
+@import "shared/header";
+//
+@import "pages/index.scss";
+@import "pages/page.scss";
+@import "pages/blog.scss";
+@import "pages/video.scss";
+@import "pages/contact.scss";
+//
+@import "shared/footer";
