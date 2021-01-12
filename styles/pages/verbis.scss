@@ -1,0 +1,40 @@
+.verbis-table{
+    td,th{
+        padding:10px;
+        border: 1px solid #fff;
+        font-weight: 600;
+        &:first-child{
+            width: 60%;
+        }
+        &:not(:first-child){
+            text-align: center;
+        }
+    }
+    th.light{
+        background: #f7f7f7;
+        border: 1px solid #a2cbea;
+    }
+    thead{
+        th{
+            background:#e6e6e6;
+            color: #005c85;
+            font-family: conv_gothamrounded-bold;
+        }
+    }
+    tbody{
+        tr{
+            &:nth-child(odd){
+                background: #6cc3cc;
+            }
+            &:nth-child(even){
+                background: #05568b;
+                color: #fff;
+            }
+        }
+    }
+    tfoot{
+        th{
+            background: #f7f7f7;
+        }
+    }
+}

@@ -1,6 +1,7 @@
 import React from "react";
 import Layout from "../components/Layout";
 import Head from "next/head";
+import Image from 'next/image';
 import MainBanner from "../components/MainBanner";
 import TestButton from "../components/TestButton";
 
@@ -28,7 +29,7 @@ function Homepage() {
             </p>
           </div>
           <div className="home-section-image aos-init aos-animate"  data-aos="fade-left">
-            <img src="images/kvkk-nedir.png" alt="KVKK Nedir?"/>
+            <Image src="/images/kvkk-nedir.png" alt="KVKK Nedir" width={420}  height={315} />
           </div>
         </div>
       </div>
@@ -58,7 +59,7 @@ function Homepage() {
             </p>
           </div>
           <div className="home-section-image aos-init aos-animate" data-aos="fade-left">
-            <img src="images/verileri-koruma-kanuna.png" alt="Kimler Kişisel Verileri Koruma Kanuna Tabidir?"/>
+            <Image src="/images/verileri-koruma-kanuna.png" alt="Kimler Kişisel Verileri Koruma Kanuna Tabidir?" width={420}  height={315} />
           </div>
           
         </div>
@@ -67,7 +68,7 @@ function Homepage() {
       <div className="home-section home-section-green">
         <div className="container">
         <div className="home-section-image aos-init aos-animate" data-aos="fade-right">
-            <img src="images/verbise-kayit-yukumlugu.png" alt="Verbis’e Kayıt Yükümlülüğü Nedir?"/>
+            <Image src="/images/verbise-kayit-yukumlugu.png" alt="Kimler Kişisel Verileri Koruma Kanuna Tabidir?" width={420}  height={315} /> 
           </div>
           <div className="home-section-text aos-init aos-animate" data-aos="fade-left">
             <h2>Verbis’e Kayıt Yükümlülüğü Nedir?</h2>
@@ -89,7 +90,7 @@ function Homepage() {
             </p>
           </div>
           <div className="home-section-image aos-init aos-animate" data-aos="fade-right">
-            <img src="images/kanuna-goren-cezalar.png" alt="Kanuna Göre Belirlenen Cezalar Nelerdir?"/>
+            <Image src="/images/kanuna-goren-cezalar.png" alt="Kanuna Göre Belirlenen Cezalar Nelerdir?" width={420}  height={315} /> 
           </div>
           
         </div>
