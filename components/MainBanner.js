@@ -1,4 +1,6 @@
-import VerbisButton from './VerbisButton'
+import Image from 'next/image';
+import VerbisButton from './VerbisButton';
+
 
 
 function MainBanner() {
@@ -6,10 +8,11 @@ function MainBanner() {
         <div className="slider">
             <VerbisButton />
             <div className="slider-bg">
-                <img src="images/rasyotek.jpg" alt="Rasyotek A.Ş" />
+                <Image src="/images/rasyotek.jpg" alt="KVKK Nedir" width={1900}  height={640} />
+                <img src="" alt="Rasyotek A.Ş" />
             </div>
             <div className="slider-mask">
-                <img src="images/kvkk-icon.png" alt="Kvkk Icon" />
+                <Image src="/images/kvkk-icon.png" alt="Kvkk Icon" width={410}  height={260} />
                 <h1>Kişisel Verilerin Korunması</h1>
                 <div className="slider-colored-text">hakkında detaylı bilgi edinin</div>
             </div>
