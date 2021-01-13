@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from 'next/image';
+import slugify from 'slugify';
 
 
 function BlogPost(props) {
@@ -13,8 +14,9 @@ function BlogPost(props) {
       
     </div>
     <Link href={{
-      pathname: props.postLink ? props.postLink : '/makaleler/[category]/[slug]',
+      pathname: '/makaleler/[category]/[slug]',
       query:{
+        category: slugify(props.postCategory).toLowerCase(),
         slug: props.slug
       }
     }} ><a className="blog-post-more">DEVAMI</a></Link>
