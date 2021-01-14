@@ -6,7 +6,7 @@ import slugify from 'slugify';
 
 function BlogPost(props) {
   return <div className="blog-post">
-    <div className="blog-post-image">{props.postImageURL ? <img src={props.postImageURL} alt={props.postTitle} /> : <Loader />}</div>
+    <div className="blog-post-image"> <img src={props.postImageURL} alt={props.postTitle} /></div>
     <div className="blog-post-content">
       {props.postAuthor ? <div className="blog-post-author">Yazar : {props.postAuthor}</div> : null}
       <h1 className="blog-post-title">{props.postTitle}</h1>
