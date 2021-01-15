@@ -10,7 +10,7 @@ function Page({data}) {
   return (
     <Layout>
       <Head>
-        <title>{data[0].title}</title>
+        <title>{data[0].categoy}</title>
       </Head>
       <PageContent pageTitle={data[0].title}>
         <h1>{data[0].title}</h1>
