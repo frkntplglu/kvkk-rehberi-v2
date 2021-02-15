@@ -18,7 +18,7 @@ function Page(props) {
 
   const fetchData = () => {
     console.log("data çektik")
-    axios.get('http://kvkk-api.herokuapp.com/api')
+    axios.get('https://kvkk-api.herokuapp.com/api')
     .then(response => {
       setNews(response.data)
     }).catch(err => {
