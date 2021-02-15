@@ -37,6 +37,7 @@
       font-family: conv_gothamrounded-bold;
       margin-top: 20px;
       margin-bottom: 20px;
+      line-height: 1.5;
     }
     h1 {
       font-size: 20px;
@@ -59,8 +60,11 @@
     ul,ol {
       li {
         line-height: 30px;
-        margin-left: 14px;
+        margin-left: 20px;
       }
+    }
+    ul{
+      list-style: disc;
     }
     a {
       

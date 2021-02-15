@@ -15,6 +15,9 @@ function Header() {
             <li>
               <Link href="/hakkimizda">Hakkımızda</Link>
             </li>
+            <li>
+              <Link href="/basindabiz">Basında Biz</Link>
+            </li>
             <li className="has-submenu">
               <Link href="/kvkk-hizmetleri">KVKK Hizmetlerimiz</Link>
               <ul>

@@ -23,10 +23,9 @@ function Page(props) {
               postImageURL={post.image} 
               postAuthor={post.author}
               postTitle={post.title}
-              postSummary="Kvkk teknik tedbirler arasında siber güvenliğin sağlanması, kişisel verilerin yedeklenmesi, kişisel veri güvenliğinin takibi gibi konular bulunmaktadır. ..." 
-              postID={post.id} 
+              postSummary="Kvkk teknik tedbirler arasında siber güvenliğin sağlanması, kişisel verilerin yedeklenmesi, kişisel veri güvenliğinin takibi gibi konular bulunmaktadır. ..."  
               postCategory="Bilişim"
-              slug={post.slug}
+              link={`makaleler/bilisim/${post.slug}`}
             />
             )
           })
@@ -44,11 +43,10 @@ function Page(props) {
 
 export default Page;
 
-export const getStaticProps = async () => {
+export const getServerSideProps = async () => {
   const response = await fetch('http://kvkk-api.herokuapp.com/api');
   const data = await response.json();
   return {
     props: {data }, // will be passed to the page component as props
-    revalidate: 1
   }
 }

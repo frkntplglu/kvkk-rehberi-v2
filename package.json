@@ -2,6 +2,7 @@
   "name": "frontend-starter-pack",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://kvkk-api.herokuapp.com/",
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -10,7 +11,9 @@
   },
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
+    "@hookform/resolvers": "^1.2.0",
     "aos": "^2.3.4",
+    "axios": "^0.21.1",
     "imagemin": "^7.0.1",
     "imagemin-webp": "^6.0.0",
     "jquery": "^3.5.1",
@@ -19,10 +22,14 @@
     "nprogress": "^0.2.0",
     "react": "17.0.1",
     "react-dom": "17.0.1",
+    "react-hook-form": "^6.15.1",
+    "react-loading-skeleton": "^2.1.1",
     "react-modal-video": "^1.2.6",
+    "react-toastify": "^7.0.3",
     "sass": "^1.30.0",
     "slugify": "^1.4.6",
-    "swr": "^0.3.11"
+    "swr": "^0.3.11",
+    "yup": "^0.32.8"
   },
   "devDependencies": {}
 }

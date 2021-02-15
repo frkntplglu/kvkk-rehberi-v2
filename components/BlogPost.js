@@ -2,6 +2,7 @@ import React from "react";
 import Link from "next/link";
 import Image from 'next/image';
 import slugify from 'slugify';
+import { post } from "jquery";
 
 
 function BlogPost(props) {
@@ -13,13 +14,7 @@ function BlogPost(props) {
       {props.postSummary ?  <div className="blog-post-summary">{props.postSummary}</div> : null}
       
     </div>
-    <Link href={{
-      pathname: '/makaleler/[category]/[slug]',
-      query:{
-        category: slugify(props.postCategory).toLowerCase(),
-        slug: props.slug
-      }
-    }} ><a className="blog-post-more">DEVAMI</a></Link>
+    <Link href={props.link}><a target={props.target || '_self'} className="blog-post-more">DEVAMI</a></Link>
   </div>;
 }
 
