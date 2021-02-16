@@ -12,7 +12,7 @@ function Page(props) {
   const [news, setNews] = useState([]);
   useEffect(() => {
     
-    setTimeout(fetchData, 2000);
+    fetchData();
 
   },[])
 
