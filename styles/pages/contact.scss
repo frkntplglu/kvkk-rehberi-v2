@@ -74,4 +74,22 @@
   border-radius: 50%;
   position: absolute;
   z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  img{
+    width:30px;
+  }
+}
+
+@media screen and(max-width:767px){
+  .contact{
+    &-info{
+      margin-bottom: 40px;
+    }
+    &-info,&-form{
+      width: 100%;
+    }
+  }
 }

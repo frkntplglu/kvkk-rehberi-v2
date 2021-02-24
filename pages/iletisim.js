@@ -249,7 +249,7 @@ function Page() {
 
               </div>
               
-              <div className="ct-arrow-wrapper">{visibleArrow ? <div className="ct-arrow" onClick={handleClick}>down</div> : null}</div>
+              <div className="ct-arrow-wrapper">{visibleArrow ? <div className="ct-arrow" onClick={handleClick}><img src="images/svg/down.svg" alt="Aşağı git" /></div> : null}</div>
               <div className="checkbox">
                 <input type="checkbox" name="check1" id="Check1" ref={register} />
                 <label htmlFor="Check1">

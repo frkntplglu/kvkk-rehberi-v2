@@ -76,3 +76,19 @@
     }
   }
 }
+
+
+@media screen and (max-width:1170px){
+  .page{
+    &-content{
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+    &-cover{
+      height: auto;
+      div{
+        margin-bottom: -5px !important;
+      }
+    }
+  }
+}

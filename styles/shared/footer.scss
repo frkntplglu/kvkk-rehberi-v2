@@ -33,3 +33,17 @@
     text-align: center;
   }
 }
+
+
+@media screen and (max-width:480px){
+  .footer{
+    min-height: auto;
+    &-logo{
+      margin-top: 0;
+    }
+    &-nav{
+      display: none;
+    }
+    
+  }
+}

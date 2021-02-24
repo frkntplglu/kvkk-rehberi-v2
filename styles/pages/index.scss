@@ -140,3 +140,30 @@
         text-align: center;
     }
 }
+
+@media screen and (max-width:1170px){
+    .slider{
+        display:none;
+    }
+}
+
+@media screen and (max-width:767px){
+    .home-section{
+        .container{
+            flex-wrap: wrap;
+        }
+        &-text{
+            width: 100%;
+            min-height: auto;
+        }
+        &-image{
+            width: 100%;
+            text-align: center;
+            margin-bottom: 30px;
+            order: -1;
+            img{
+                max-width: 100%;
+            }
+        }
+    }
+}

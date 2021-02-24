@@ -11,12 +11,16 @@ function Header() {
           </Link>
         </div>
         <div className="main-menu">
+          <div className="menu-btn">
+            <button type="button">
+              <span></span>
+              <span></span>
+              <span></span>
+            </button>
+          </div>
           <ul>
             <li>
               <Link href="/hakkimizda">Hakkımızda</Link>
-            </li>
-            <li>
-              <Link href="/basindabiz">Basında Biz</Link>
             </li>
             <li className="has-submenu">
               <Link href="/kvkk-hizmetleri">KVKK Hizmetlerimiz</Link>
