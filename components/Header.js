@@ -23,44 +23,44 @@ function Header() {
               <Link href="/hakkimizda">Hakkımızda</Link>
             </li>
             <li className="has-submenu">
-              <Link href="/kvkk-hizmetleri">KVKK Hizmetlerimiz</Link>
+              <Link href="/kvkk-hizmetleri"><a>KVKK Hizmetlerimiz</a></Link>
               <ul>
                 <li>
-                  <Link href="/kvkk-hizmetleri">KVKK Hizmetlerimiz</Link>
+                  <Link href="/kvkk-hizmetleri"><a>KVKK Hizmetlerimiz</a></Link>
                 </li>
                 <li>
-                  <Link href="/kvkk-denetimi">KVKK Denetimi</Link>
+                  <Link href="/kvkk-denetimi"><a>KVKK Denetimi</a></Link>
                 </li>
                 <li>
-                  <Link href="/kvkk-egitimi">KVKK Eğitimi</Link>
+                  <Link href="/kvkk-egitimi"><a>KVKK Eğitimi</a></Link>
                 </li>
                 <li>
-                  <Link href="/kvkk-danismanligi">KVKK Danışmanlığı</Link>
+                  <Link href="/kvkk-danismanligi"><a>KVKK Danışmanlığı</a></Link>
                 </li>
               </ul>
             </li>
             <li>
-              <Link href="/test">KVKK Hazırlık Testi</Link>
+              <Link href="/test"><a>KVKK Hazırlık Testi</a></Link>
             </li>
             <li className="has-submenu">
-              <Link href="/makaleler">Blog</Link>
+              <Link href="/makaleler"><a>Blog</a></Link>
               <ul>
                 <li>
-                  <Link href="/makaleler">Makaleler</Link>
+                  <Link shallow href="/makaleler"><a>Makaleler</a></Link>
                 </li>
                 <li>
-                  <Link href="/videolar">Videolar</Link>
+                  <Link href="/videolar"><a>Videolar</a></Link>
                 </li>
               </ul>
             </li>
             <li className="has-submenu">
-              <Link href="/tanimlar">Bilgi Bankası</Link>
+              <Link href="/tanimlar"><a>Bilgi Bankası</a></Link>
               <ul>
                 <li>
-                  <Link href="/tanimlar">Tanımlar</Link>
+                  <Link href="/tanimlar"><a>Tanımlar</a></Link>
                 </li>
                 <li>
-                  <Link href="/kanunlar">Kanunlar</Link>
+                  <Link href="/kanunlar"><a>Kanunlar</a></Link>
                 </li>
               </ul>
             </li>
