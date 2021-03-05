@@ -43,10 +43,11 @@ function Page(props) {
 
 export default Page;
 
-export const getServerSideProps = async () => {
+export const getStaticProps = async () => {
   const response = await fetch('http://kvkk-api.herokuapp.com/api');
   const data = await response.json();
   return {
-    props: {data }, // will be passed to the page component as props
+    props: {data },
+    revalidate: 100
   }
 }
