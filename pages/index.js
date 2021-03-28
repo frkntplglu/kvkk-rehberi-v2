@@ -4,6 +4,7 @@ import Head from "next/head";
 import Image from 'next/image';
 import MainBanner from "../components/MainBanner";
 import TestButton from "../components/TestButton";
+import HomeBar from "../components/HomeBar";
 
 function Homepage() {
   return (
@@ -14,11 +15,13 @@ function Homepage() {
       </Head>
       <TestButton />
       <MainBanner />
-      <div className="home-section">
-        <div className="container">
-          <div className="home-section-text aos-init aos-animate" data-aos="fade-right">
-            <h2>KVKK Nedir?</h2>
-            <p>
+      <HomeBar
+        title="KVKK Nedir?"
+        animationContent="fade-right"
+        animationImage="fade-left"
+        imageURL="/images/kvkk-nedir.png"
+      >
+        <p>
             7 Nisan 2016 tarihinde yayımlanarak yürürlüğe giren ‘6698 sayılı Kişisel Verilerin Korunması Kanunu’; kişisel verilerin işlenmesinde başta özel hayatın gizliliği olmak üzere kişilerin temel hak ve özgürlüklerini korumak ve kişisel verileri işleyen gerçek ve tüzel kişilerin yükümlülükleri ve uyacakları kuralları düzenleme amacını taşımaktadır
             </p>
             <p>
@@ -27,75 +30,49 @@ function Homepage() {
             <p>
             İnternet üzerinden iş ve işlemler gerçekleştiren her kurum 5651 sayılı kanuna; kişisel bir bilgi tutan her kurum ise KVKK’ na tabidir.
             </p>
-          </div>
-          <div className="home-section-image aos-init aos-animate"  data-aos="fade-left">
-            <Image src="/images/kvkk-nedir.png" alt="KVKK Nedir" width={420}  height={315} />
-          </div>
-        </div>
-      </div>
-
-      <div className="home-section home-section-blue">
-        <div className="container">
-        <div className="home-section-image aos-init aos-animate" data-aos="fade-left">
-            <img src="images/kisisel-veri-nedir.png" alt="Kişisel Veri Nedir?"/>
-          </div>
-          <div className="home-section-text aos-init aos-animate" data-aos="fade-right">
-            <h2>Kişisel Veri Nedir?</h2>
-            <p>
+      </HomeBar>
+      <HomeBar
+        title="Kişisel Veri Nedir?"
+        animationContent="fade-right"
+        animationImage="fade-left"
+        imageURL="/images/kisisel-veri-nedir.png"
+        color="blue"
+        align="left-image">
+        <p>
             Kanundaki tanımıyla; kimliği belirli veya belirlenebilir gerçek kişiye ilişkin her türlü bilgiyi ifade etmektedir. Kişinin adı, soyadı, vatandaşlık numarası, banka bilgileri gibi pek çok başlıkta sınıflandırılmaktadır.
             </p>
-          </div>
-          
-        </div>
-      </div>
-
-      <div className="home-section">
-        <div className="container">
-        
-          <div className="home-section-text aos-init aos-animate" data-aos="fade-right">
-            <h2>Kimler Kişisel Verileri Koruma Kanuna Tabidir?</h2>
-            <p>
+      </HomeBar>
+      <HomeBar
+        title="Kimler Kişisel Verileri Koruma Kanuna Tabidir?"
+        animationContent="fade-right"
+        animationImage="fade-left"
+        imageURL="/images/verileri-koruma-kanuna.png"
+      >
+        <p>
             Kişisel veri bulunduran, aktaran ya da saklayan her gerçek ya da tüzel kişi kanuna uymakla yükümlüdür.
             </p>
-          </div>
-          <div className="home-section-image aos-init aos-animate" data-aos="fade-left">
-            <Image src="/images/verileri-koruma-kanuna.png" alt="Kimler Kişisel Verileri Koruma Kanuna Tabidir?" width={420}  height={315} />
-          </div>
-          
-        </div>
-      </div>
-
-      <div className="home-section home-section-green">
-        <div className="container">
-        <div className="home-section-image aos-init aos-animate" data-aos="fade-right">
-            <Image src="/images/verbise-kayit-yukumlugu.png" alt="Kimler Kişisel Verileri Koruma Kanuna Tabidir?" width={420}  height={315} /> 
-          </div>
-          <div className="home-section-text aos-init aos-animate" data-aos="fade-left">
-            <h2>Verbis’e Kayıt Yükümlülüğü Nedir?</h2>
-            <p>
+      </HomeBar>
+      <HomeBar
+        title="Verbis’e Kayıt Yükümlülüğü Nedir?"
+        animationContent="fade-right"
+        animationImage="fade-left"
+        imageURL="/images/verbise-kayit-yukumlugu.png"
+        color="green"
+        align="left-image">
+        <p>
             Yıllık çalışan sayısı 50’den çok veya yıllık mali bilanço toplamı 25 milyon TL’den çok olan gerçek ve tüzel kişi veri sorumluları ile yurtdışında yerleşik gerçek ve tüzel kişi veri sorumluları için VERBİS’e kayıt olmak zorunludur.
             </p>
-          </div>
-          
-        </div>
-      </div>
-
-      <div className="home-section">
-        <div className="container">
-        
-          <div className="home-section-text aos-init aos-animate" data-aos="fade-left">
-            <h2>Kanuna Göre Belirlenen Cezalar Nelerdir?</h2>
-            <p>
+      </HomeBar>
+      <HomeBar
+        title="Kanuna Göre Belirlenen Cezalar Nelerdir?"
+        animationContent="fade-right"
+        animationImage="fade-left"
+        imageURL="/images/kanuna-goren-cezalar.png"
+      >
+        <p>
             Farklı başlıklarda 5.000 TL ile 1.000.000 TL arasındaki tutarlarda idari para cezaları uygulanmaktadır.
             </p>
-          </div>
-          <div className="home-section-image aos-init aos-animate" data-aos="fade-right">
-            <Image src="/images/kanuna-goren-cezalar.png" alt="Kanuna Göre Belirlenen Cezalar Nelerdir?" width={420}  height={315} /> 
-          </div>
-          
-        </div>
-      </div>
-      
+      </HomeBar>      
     </Layout>
   );
 }

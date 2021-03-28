@@ -1,8 +1,11 @@
 import React from 'react'
 
-function Input({type, value, onChange}) {
+function Input({type, name, onChange, className, register, placeholder, errorWrapper, grid}) {
     return (
-        <input type={type} value={value} onChange={onChange} className="form-input" />
+        <div className={`form-group ${grid} ${errorWrapper.name ? "error" : ''}`}>
+            <input type={type} name={name} placeholder={placeholder} onChange={onChange} className={`form-input ${className}`} ref={register} />
+            <p>{errorWrapper.name?.message}</p>
+        </div>
     )
 }
 

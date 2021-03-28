@@ -6,6 +6,8 @@ import Head from "next/head";
 import Link from "next/link";
 import Layout from "../components/Layout";
 import PageContent from "../components/PageContent";
+import Button from "../components/Form/Button";
+import Input from "../components/Form/Input";
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 const phoneRegExp = /^$|^(5(\d{9}))/
@@ -38,6 +40,7 @@ function Page() {
     draggable: true,
     progress: undefined,
     });
+
   const onSubmit = data => {
     notify();
     console.log(data);
@@ -59,6 +62,7 @@ function Page() {
   const handleClick = () => {
     clarificationText.current.scrollTop = 5000;
   }
+
   
   return (
     <Layout>
@@ -97,30 +101,54 @@ function Page() {
             <div className="contact-title">İletişim formu</div>
 
             <form onSubmit={handleSubmit(onSubmit)}>
-              <div className={`form-group half ${errors.firstName ? "error" : ''} `}>
-                <input  name="firstName" type="text" placeholder="Ad" ref={register} />
-                <p>{errors.firstName?.message}</p>
-              </div>
-              <div className={`form-group half ${errors.lastName ? "error" : ''}`}>
-                <input name="lastName" type="text" placeholder="Soyad" ref={register} />
-                <p>{errors.lastName?.message}</p>
-              </div>
-              <div className={`form-group ${errors.email ? "error" : ''}`}>
-                <input type="text" name="email" placeholder="E-posta adresiniz" ref={register} />
-                <p>{errors.email?.message}</p>
-              </div>
-              <div className={`form-group ${errors.phone ? "error" : ''}`}>
-                <input type="text" name="phone" placeholder="Telefon" ref={register} />
-                <p>{errors.phone?.message}</p>
-              </div>
-              <div className={`form-group ${errors.title ? "error" : ''}`}>
-                <input type="text" name="title" placeholder="Ünvan" ref={register} />
-                <p>{errors.title?.message}</p>
-              </div>
-              <div className={`form-group ${errors.company ? "error" : ''}`}>
-                <input type="text" name="company" placeholder="Şirket" ref={register} />
-                <p>{errors.company?.message}</p>
-              </div>
+              <Input
+                  name="firstName"
+                  type="text"
+                  placeholder="Ad"
+                  register={register}
+                  errorWrapper={errors}
+                  grid="half"
+                />
+              <Input
+                  name="lastName"
+                  type="text"
+                  placeholder="Soyad"
+                  register={register}
+                  errorWrapper={errors}
+                  grid="half"
+                />
+              <Input
+                  name="email"
+                  type="text"
+                  placeholder="E-posta adresiniz"
+                  register={register}
+                  errorWrapper={errors}
+                  grid="full"
+                />
+              <Input
+                  name="phone"
+                  type="text"
+                  placeholder="Telefon"
+                  register={register}
+                  errorWrapper={errors}
+                  grid="full"
+                />
+              <Input
+                  name="title"
+                  type="text"
+                  placeholder="Ünvan"
+                  register={register}
+                  errorWrapper={errors}
+                  grid="full"
+                />
+              <Input
+                  name="company"
+                  type="text"
+                  placeholder="Şirket"
+                  register={register}
+                  errorWrapper={errors}
+                  grid="full"
+                />
               <div className={`form-group ${errors.subject ? "error" : ''}`}>
                 <select name="subject"  ref={register}>
                   <option>Bilgi Talep Edilen Hizmet</option>
@@ -279,7 +307,7 @@ function Page() {
                 </label>
               </div>
               <div className="captcha"></div>
-              <button>Gönder</button>
+              <Button>Gönder</Button>
             </form>
           </div>
           <div className="contact-map">

@@ -4,15 +4,21 @@ import Layout from "../../components/Layout";
 import PageContent from "../../components/PageContent";
 import BlogPost from "../../components/BlogPost";
 import Loader from "../../components/Loader";
-
+import Router from 'next/router';
 
 function Page(props) {
+  const [loader,setLoader] = useState(false);
+  useEffect(() => {
+    setTimeout(setLoader(true), 1500);
+  })
   return (
     <Layout>
       <Head>
         <title>KVKK Rehberi - Makaleler</title>
       </Head>
-      <PageContent pageTitle="Makaleler">
+      {
+        loader ? 
+        <PageContent pageTitle="Makaleler">
         <div className="blog-list">
         {
           props.data === 0 ? <Loader /> : 
@@ -36,6 +42,10 @@ function Page(props) {
 
         </div>
       </PageContent>
+      : 
+      "Yükleniyor..."
+      }
+      
         
     </Layout>
   );

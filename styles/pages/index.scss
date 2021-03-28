@@ -141,6 +141,12 @@
     }
 }
 
+.home-section.left-image{
+    .home-section-image{
+        order: -1;
+    }
+}
+
 @media screen and (max-width:1170px){
     .slider{
         display:none;
